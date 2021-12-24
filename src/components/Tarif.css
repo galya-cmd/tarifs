@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+    color: aliceblue;
 }
 
 .cart{
@@ -32,33 +33,9 @@
     padding: 10px;
     
 }
-.tariff-name2 {
-    background-color: rgb(195, 197, 74);
-    padding: 10px;
-    
-}
-.priсe2 {
-    background-color: chartreuse;
-    padding: 10px;
-    
-}
-.tariff-name3 {
-    background-color: coral;
-    padding: 10px;
-    
-}
-.priсe3 {
-    background-color: rgb(209, 47, 68);
-    padding: 10px;
-    
-}
-.tariff-name4 {
-    background-color: rgb(8, 8, 8);
-    padding: 10px;
-    
-}
-.priсe4 {
-    background-color: rgb(22, 19, 19);
-    padding: 10px;
-    
-}
+
+
+
+
+
+
