@@ -2,7 +2,9 @@ import React from 'react';
 import './Tarif.css';
 
 class Tarif extends React.Component {
-
+  static defaultPrpps = {
+    name : "Тариф выбран!"
+  }
   render() {
     const name = this.props.name;
     const { color, price, speed, text, ...props } = this.props;
