@@ -8,12 +8,14 @@ class Tarif extends React.Component {
   render() {
     const name = this.props.name || "Тариф выбран!";
     const { color, price, speed, text, ...props } = this.props;
-
-
+let cart = document.querySelector('cart');
+    if (cart.onClick ){
+      return 'Тариф';
+    }
 
     return (
 
-      <div className="cart">
+      <div className="cart" id='cart'>
 
         <div {...props} style={{ backgroundColor: color }}>{name}</div>
         <div  {...props} style={{ backgroundColor: color }}>{price}</div>
