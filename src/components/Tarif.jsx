@@ -13,10 +13,10 @@ class Tarif extends React.Component {
     
       <div className="cart">
       
-      <div className="tariff-name" style={{backgroundColor: color}}>{name}</div>
-      <div className="priсe" style={{backgroundColor: color}}>{price}</div>
-      <div className="speed">{speed}</div>
-      <div className="text">{text}</div> 
+      <div {...props} style={{backgroundColor: color}}>{name}</div>
+      <div  {...props}style={{backgroundColor: color}}>{...props}</div>
+      <div {...props}>{...props}</div>
+      <div {...props}>{...props}</div> 
       </div>
       );
     }  
