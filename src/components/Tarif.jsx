@@ -14,8 +14,8 @@ class Tarif extends React.Component {
       <div className="cart">
       
       <div {...props} style={{backgroundColor: color}}>{name}</div>
-      <div  {...props}style={{backgroundColor: color}}>{...props}</div>
-      <div {...props}>{...props}</div>
+      <div  {...props}style={{backgroundColor: color}}>{price}</div>
+      <div {...props}></div>
       <div {...props}>{...props}</div> 
       </div>
       );
