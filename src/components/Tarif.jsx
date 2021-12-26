@@ -5,7 +5,7 @@ class Tarif extends React.Component {
 
   render(){
     const name = this.props.name;
-  const {color, ...props} = this.props;
+  const {color,price, speed, text, ...props} = this.props;
   
   
   
