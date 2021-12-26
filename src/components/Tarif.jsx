@@ -2,8 +2,10 @@ import React from 'react';
 import './Tarif.css';
 
 class Tarif extends React.Component {
+
   render(){
-  const {name,color,price,speed,text} = this.props;
+    const name = this.props.name;
+  const {color, ...props} = this.props;
   
   
   
