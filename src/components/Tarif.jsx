@@ -6,7 +6,7 @@ class Tarif extends React.Component {
     name : "Тариф выбран!"
   }
   render() {
-    const name = this.props.name;
+    const name = this.props.name || "Тариф выбран!";
     const { color, price, speed, text, ...props } = this.props;
 
 
