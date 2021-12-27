@@ -8,7 +8,7 @@ class Tarif extends React.Component {
 
   makeSelected = () => {
     this.setState({
-      name : 'Тариф выбран'
+      name : 'Ok'
     });
   }
   render() {
