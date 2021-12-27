@@ -2,16 +2,22 @@ import React from 'react';
 import './Tarif.css';
 
 class Tarif extends React.Component {
-  static defaultPrpps = {
+  state = {
     name : "Тариф выбран!"
+  };
+
+  makeSelected = () => {
+    this.setState({
+      name : 'Тариф выбран'
+    });
   }
   render() {
-    const name = this.props.name || "Тариф выбран!";
-    const { color, price, speed, text, ...props } = this.props;
+    
+    const {name, color, price, speed, text, ...props } = this.props;
  
     return (
 
-      <div className="cart" id='cart'>
+      <div className="cart" id='cart' onClick={this.makeSelected} >
 
         <div {...props} id ='out'style={{ backgroundColor: color }}>{name}</div>
         <div  {...props} style={{ backgroundColor: color }}>{price}</div>
