@@ -19,7 +19,7 @@ class Tarif extends React.Component {
 
       <div className="cart" id='cart' onClick={this.makeSelected} >
 
-        <div {...props} id ='out'style={{ backgroundColor: color }}>{this.state.name ? "Нажата" : "Нажми меня"}</div>
+        <div {...props} id ='out'style={{ backgroundColor: color }}>{this.state.name ? "Выбран" : "Тариф"}</div>
         <div  {...props} style={{ backgroundColor: color }}>{price}</div>
         <div {...props} style={{ backgroundColor: '#F5F5F5' }}>{speed}</div>
         <div {...props} style={{ backgroundColor: '#504b4b' }}>{text}</div>
