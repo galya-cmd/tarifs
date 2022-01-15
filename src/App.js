@@ -3,6 +3,7 @@
 import './App.css';
 import Tarif from './components/Tarif.jsx';
 import './components/Tarif.css';
+import Text from './components/text';
 
 const tarifs = [{name : "Безлимитный 300", color : 'rgb(159, 238, 231)', price : "300 руб./мес", speed :"до 10 Мбит/сек", text :"Объем включенного тарифа не ограничен"},
 { name :"Безлимитный 450", color : '#008000', price:"450 руб./мес" ,speed :"до 50 Мбит/сек", text:"Объем включенного тарифа не ограничен"},
@@ -13,7 +14,7 @@ const tarifs = [{name : "Безлимитный 300", color : 'rgb(159, 238, 231
 function App () {
   return (
     <>
-
+  <Text/>
     <div className="App">
       {
         tarifs.map((tarif) => <Tarif name={tarif.name} color={tarif.color} price= {tarif.price} speed = {tarif.speed} text = {tarif.text}></Tarif>
